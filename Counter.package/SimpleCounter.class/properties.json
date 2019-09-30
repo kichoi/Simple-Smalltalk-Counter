@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "kchoi 9/30/2019 00:51",
+	"super" : "Object",
+	"category" : "Counter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SimpleCounter",
+	"type" : "normal"
+}
