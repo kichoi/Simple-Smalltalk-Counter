@@ -1,1 +1,1 @@
-# Simple-Smalltalk-Counter
+# Back to Smalltalk (Pharo) Examples
