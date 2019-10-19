@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "kchoi 10/18/2019 14:31",
+	"super" : "Object",
+	"category" : "Weather-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"updated",
+		"units",
+		"updateTime",
+		"validTimes",
+		"elevation",
+		"periods"
+	],
+	"name" : "Forecast",
+	"type" : "normal"
+}

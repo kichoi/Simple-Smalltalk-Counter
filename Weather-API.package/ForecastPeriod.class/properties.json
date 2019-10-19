@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "kchoi 10/18/2019 15:58",
+	"super" : "Object",
+	"category" : "Weather-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"icon",
+		"isDaytime",
+		"windSpeed",
+		"startTime",
+		"temperatureUnit",
+		"detailedForecast",
+		"shortForecast",
+		"temperatureTrend",
+		"temperature",
+		"endTime",
+		"windDirection",
+		"number"
+	],
+	"name" : "ForecastPeriod",
+	"type" : "normal"
+}

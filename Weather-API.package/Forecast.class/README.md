@@ -1,0 +1,1 @@
+Detailed Forcast instance based on National Weather Service
