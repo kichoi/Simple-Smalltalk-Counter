@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "kchoi 10/19/2019 18:43",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfWeatherAPI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfWeatherAPI",
+	"type" : "normal"
+}
