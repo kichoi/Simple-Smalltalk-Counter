@@ -10,15 +10,18 @@ forecast: aPoint
    		accept: ZnMimeType applicationJson;
 		contentReader: [:entity| |reader|
 			reader:=(NeoJSONReader on: entity readStream).
-			"reader mapInstVarsFor: ForecastResponse."
 			reader for: ForecastResponse do: [ :m |
 				(m mapInstVar:#type).
 				m mapInstVar: #geometry.
-				m mapInstVar: #properties.
-				
+				(m mapInstVar: #properties) valueSchema:#ForecastSchema.
 				].
-			reader for: #ArrayOfForecast customDo: [ :mapping| mapping listOfElementSchema: Forecast ].
-			reader mapInstVarsFor: Forecast.
+			reader for: #ForecastSchema do: [ :m|
+				m subjectClass: Forecast.
+				m mapInstVars.
+				(m mapInstVar: #periods) valueSchema: #ArrayOfForecast.
+				 ].
+			reader for: #ArrayOfForecast customDo: [ :mapping| mapping listOfElementSchema: ForecastPeriod ].
+			reader mapInstVarsFor: ForecastPeriod.
 			reader nextAs: ForecastResponse.
 			];
 		get.
