@@ -1,4 +1,4 @@
-as yet unclassified
+api
 forecastUrl: aPoint
 	"return the forecast url"
 	| response url aRtn |

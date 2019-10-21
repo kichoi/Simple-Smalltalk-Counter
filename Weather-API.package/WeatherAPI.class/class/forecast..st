@@ -1,4 +1,4 @@
-as yet unclassified
+api
 forecast: aPoint
 	"comment stating purpose of message"	
 	| response url|
